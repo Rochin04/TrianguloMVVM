@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Triangulo_MVVM_RERM.View.ViewTriangulo">
+    <ContentPage.Resources>
+        <StyleSheet Source="/CSS/TrianguloStyle.css"/>
+    </ContentPage.Resources>
+    <StackLayout>
+        <Frame StyleClass="titulo">
+            <Label Text="Calcular Area del Triangulo"  HorizontalTextAlignment="Center" StyleId="encabezado"/>
+        </Frame>
+        <Label Text="Base"/>
+        <Entry Placeholder="Base" PlaceholderColor="Red" x:Name="Base" Keyboard="Numeric" Text="{Binding  Base}"/>
+        <Label Text="Altura"/>
+        <Entry Placeholder="Altura" PlaceholderColor="Red" x:Name="Altura" Keyboard="Numeric" Text="{Binding  Altura}"/>
+        <Label Text="Lado 1"/>
+        <Entry Placeholder="Lado 1" PlaceholderColor="Red" x:Name="Lado1" Keyboard="Numeric" Text="{Binding  Lado1}"/>
+        <Label Text="Lado 2"/>
+        <Entry Placeholder="Lado 2" PlaceholderColor="Red" x:Name="Lado2" Keyboard="Numeric" Text="{Binding  Lado2}"/>
+        <Label x:Name="AreaTriangulo" StyleId="resultado" Text="{Binding AreaTriangulo}"/>
+        <Label x:Name="Tipo" StyleId="resultado" Text="{Binding Tipo}"/>
+        <Button Text="Calcular area" StyleClass="calcular" CornerRadius="30" TextColor="Black" VerticalOptions="EndAndExpand" Command="{Binding CalcularTriangulo}"/>
+    </StackLayout>
+</ContentPage>

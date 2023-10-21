@@ -1,0 +1,36 @@
+^ContentPage {
+    background-color: black;
+    padding: 20,0;
+}
+
+frame.titulo {
+    background-color: white;
+    border-radius: 2,2;
+}
+
+label {
+    color: white;
+    font-size: 20;
+}
+
+#encabezado {
+    color: black;
+    font-size: 35;
+    font-style: bold;
+}
+
+entry {
+    color: red;
+    font-style: bold;
+}
+
+#resultado {
+    color: red;
+    font-style: bold;
+    font-size: 20;
+}
+
+button.calcular {
+    background-color: white;
+    margin: 0,30,0,0;
+}
